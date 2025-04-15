@@ -12,9 +12,16 @@
   --blue: #3D90D7;
 }
 
+(prefers-color-scheme: dark) {
+  body {
+    background-color: darkslategray;
+  }
+}
+
 p {
   text-indent: 3rem;
   margin-bottom: 1rem;
+  
 }
 
 .paraNoIndent {
@@ -29,6 +36,7 @@ p, li {
   font-size: 1.4rem;
   text-align: justify;
   line-height: 2rem;
+  max-width: 68ch;
 }
 
 body {

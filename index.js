@@ -41,13 +41,16 @@ const quizKey = [
   },
 ]
 
+const quiz = document.getElementById("quiz");
 const q = document.getElementById("question");
 const a = document.getElementById("answer");
 const answerHelper = document.getElementById("answerHelper");
 
+quiz.style.display = "none";
 a.hidden = true;
 
 startQuiz.addEventListener("click", () => {
+  quiz.style.display = "block";
   a.hidden = true;
   const random = Math.floor(Math.random() * quizKey.length);
   q.innerHTML = `Q${random + 1}. ${quizKey[random].q}`;
